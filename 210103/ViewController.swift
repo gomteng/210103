@@ -28,6 +28,12 @@ class ViewController: UIViewController {
         
         
     }
+    @IBAction func moveBtn(_ sender: Any) {
+        let secondViewController = self.storyboard?.instantiateViewController(identifier: "secondVC")
+        
+        present(secondViewController!, animated: true, completion: nil)
+        
+    }
     
 }
 
