@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func alertBtntap(_ sender: Any) {
-        let alretController = UIAlertController(title: "alret", message: "alret message", preferredStyle: UIAlertController.Style.alert)
-        let okBtn = UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil)
+        let alretController = UIAlertController(title: "alret", message: "alret message", preferredStyle: .actionSheet)
+        let okBtn = UIAlertAction(title: "ok", style: .default, handler: nil)
         let closeBtn = UIAlertAction(title: "close", style: .cancel, handler: nil)
         
         alretController.addAction(okBtn)
@@ -24,6 +24,8 @@ class ViewController: UIViewController {
         
         // 화면을 띄우는 코드
         present(alretController, animated: true, completion: nil)
+        
+        
         
     }
     
