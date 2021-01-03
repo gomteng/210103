@@ -35,5 +35,14 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func moveBtn2(_ sender: Any) {
+        let secondViewcontroller = self.storyboard?.instantiateViewController(identifier: "secondVC")
+        
+        navigationController?.pushViewController(secondViewcontroller!, animated: true)
+        
+    }
+    
+    
+    
 }
 

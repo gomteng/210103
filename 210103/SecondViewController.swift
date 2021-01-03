@@ -20,5 +20,9 @@ class SecondViewController: UIViewController {
         
     }
     
-
+    @IBAction func backBtn2(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
