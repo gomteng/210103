@@ -42,6 +42,10 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func moveBtn3(_ sender: Any) {
+        performSegue(withIdentifier: "toSecondVC", sender: nil)
+        
+    }
     
     
 }

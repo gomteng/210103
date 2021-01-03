@@ -40,11 +40,38 @@
                                     <action selector="moveBtn2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lmz-gi-Gkc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIm-lc-aVu">
+                                <rect key="frame" x="176" y="466" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="화면이동3"/>
+                                <connections>
+                                    <segue destination="cWc-A2-oP6" kind="presentation" id="xco-5P-pXb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOd-9K-WL1">
+                                <rect key="frame" x="177" y="516" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="화면이동4"/>
+                                <connections>
+                                    <segue destination="cWc-A2-oP6" kind="show" id="oIT-7o-u04"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WG-lS-hZD">
+                                <rect key="frame" x="177" y="613" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="화면이동5"/>
+                                <connections>
+                                    <action selector="moveBtn3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hku-Rk-Rtk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="3Vl-nk-JLN"/>
+                    <connections>
+                        <segue destination="cWc-A2-oP6" kind="presentation" identifier="toSecondVC" id="8pM-Fz-HH7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,7 +82,7 @@
             <objects>
                 <viewController storyboardIdentifier="secondVC" id="cWc-A2-oP6" customClass="SecondViewController" customModule="_10103" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7tH-CN-9JL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjS-dD-0py">
@@ -78,6 +105,7 @@
                         <viewLayoutGuide key="safeArea" id="ViH-TY-EFW"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7ct-gc-kFF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pf7-9l-6hM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,6 +130,9 @@
             <point key="canvasLocation" x="131.8840579710145" y="73.660714285714278"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="8pM-Fz-HH7"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
